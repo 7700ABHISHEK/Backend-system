@@ -1,0 +1,43 @@
+<header class="position-fixed bg-white col-12 z-3">
+    <nav class="navbar navbar-expand-lg my-2">
+        <div class="container d-flex align-items-center">
+            <div class="brand-logo me-4 cursor">
+                <a href="/">
+                    <img src="/images/logo.png" class="img-fluid" alt="header" style="max-height: 50px;">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feature</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#product-section" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Product
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <li class="text-body-secondary mx-2">
+                <a href="/checkout">
+                    <button type="button" class="btn btn-primary position-relative">
+                        <i class="fa-solid fa-cart-shopping cursor"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            id="counter">
+                            0
+                        </span>
+                    </button>
+                </a>
+            </li>
+        </div>
+    </nav>
+</header>
