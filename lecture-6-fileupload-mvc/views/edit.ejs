@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark d-flex flex-column justify-content-start align-items-center py-5">
+
+    <form action="/update-student/<%= student.id %>" method="post" enctype="multipart/form-data"
+        class="bg-secondary p-4 rounded shadow-lg mb-5" style="width: 400px;">
+
+        <h2 class="text-white text-center mb-4">Add Student</h2>
+
+        <div class="mb-3">
+            <label class="form-label text-light">Name</label>
+            <input type="text" value="<%= student.name %>" name="name" class="form-control bg-dark text-white border-0"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-light">Age</label>
+            <input type="number" value="<%= student.age %>" name="age" class="form-control bg-dark text-white border-0"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-light">Email</label>
+            <input type="email" value="<%= student.email %>" name="email"
+                class="form-control bg-dark text-white border-0" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-light">Photo</label>
+            <input type="file" value="/uploads<%= student.photo %>" name="photo" accept="image/*" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+            Add Student
+        </button>
+
+    </form>
+
+</body>
+
+</html>
